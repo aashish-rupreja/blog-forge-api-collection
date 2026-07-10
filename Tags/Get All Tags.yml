@@ -1,0 +1,19 @@
+info:
+  name: Get All Tags
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{blogForge}}/api/v1/tags?name=to"
+  params:
+    - name: name
+      value: to
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

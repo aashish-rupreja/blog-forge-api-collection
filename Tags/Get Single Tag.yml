@@ -1,0 +1,15 @@
+info:
+  name: Get Single Tag
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{blogForge}}/api/v1/tags"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
