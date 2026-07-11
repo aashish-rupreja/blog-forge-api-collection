@@ -1,0 +1,21 @@
+info:
+  name: Delete Category
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{blogForge}}/api/v1/categories"
+  body:
+    type: json
+    data: |-
+      {
+        "name":"aaaa"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
