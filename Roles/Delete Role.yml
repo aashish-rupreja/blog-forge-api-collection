@@ -1,0 +1,15 @@
+info:
+  name: Delete Role
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{blogForge}}/api/v1/roles/role_elder"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

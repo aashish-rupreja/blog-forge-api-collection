@@ -1,16 +1,16 @@
 info:
-  name: Create Role
+  name: Delete Multiple Roles
   type: http
-  seq: 3
+  seq: 5
 
 http:
-  method: POST
+  method: DELETE
   url: "{{blogForge}}/api/v1/roles"
   body:
     type: json
     data: |-
       {
-        "name":""
+        "roles":["adsj", "elder"]
       }
   auth: inherit
 
