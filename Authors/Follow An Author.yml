@@ -1,0 +1,15 @@
+info:
+  name: Follow An Author
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{blogForge}}/api/v1/authors/bruce.banner/follow"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: Delete Blog
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{blogForge}}/api/v1/blogs/please-dont-microwave-uranium-hand-it-over-to-me"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

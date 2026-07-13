@@ -1,0 +1,22 @@
+info:
+  name: Partial Update User
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{blogForge}}/api/v1/users/lucy12"
+  body:
+    type: json
+    data: |-
+      {
+        "username": "Rahul123",
+        "firstName":"Rahul"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

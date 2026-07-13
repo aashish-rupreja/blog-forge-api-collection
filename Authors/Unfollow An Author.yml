@@ -1,0 +1,15 @@
+info:
+  name: Unfollow An Author
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{blogForge}}/api/v1/authors/steve.rogers/follow"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

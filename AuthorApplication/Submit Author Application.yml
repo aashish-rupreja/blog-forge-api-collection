@@ -1,0 +1,21 @@
+info:
+  name: Submit Author Application
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{blogForge}}/api/v1/author-applications"
+  body:
+    type: json
+    data: |-
+      {
+        "applicationReason":"The toaster burned my bread. I considered becoming incredibly upset, but then I remembered replacing the toaster is cheaper than replacing the kitchen. Growth. A wiser person understands that not every crispy slice is a personal attack, and not every appliance deserves a dramatic courtroom speech. Sometimes the universe sends a little smoke, a little chaos, and a reminder to pay attention to the settings."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

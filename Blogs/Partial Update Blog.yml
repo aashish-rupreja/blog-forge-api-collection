@@ -1,0 +1,47 @@
+info:
+  name: Partial Update Blog
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{blogForge}}/api/v1/blogs/please-dont-microwave-uranium-hand-it-over-to-me"
+  body:
+    type: json
+    data: |-
+      {
+          "title": "Please Don't Microwave Uranium, Hand it over to ME",
+          "categories": [
+            "Science",
+            "Humour"
+          ],
+          "tags": [
+            "Gamma",
+            "Microwave",
+            "Physics"
+          ]
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  {
+      "title": "Please Don't Microwave Uranium",
+      "content": "I ran the numbers. Microwaving uranium has a 0% chance of improving leftovers and a 97% chance of ruining your security deposit. Science strongly recommends pizza instead. Experts agree that a perfectly cooked slice is far more powerful than any questionable kitchen experiment involving glowing materials and suspicious beeping noises. A true food champion knows that victory comes from melted cheese, crispy crust, and the ancient wisdom of ordering another round. Do not chase dangerous shortcuts when a delicious solution is already waiting in a cardboard box. Protect your kitchen, respect your neighbors, and remember that the greatest discoveries are made with curiosity, common sense, and a generous amount of extra cheese. The future of leftovers is safe, delicious, and definitely not radioactive.\n",
+      "enableComments": true,
+      "blogStatus": "PUBLISHED",
+      "categories": [
+        "Science",
+        "Humour"
+      ],
+      "tags": [
+        "Gamma",
+        "Microwave",
+        "Physics"
+      ]
+    }
